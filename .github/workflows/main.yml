@@ -29,4 +29,4 @@ jobs:
         with:
           deploy-hook: ${{ secrets.RENDER_DEPLOY_HOOK }}
           image-url: ${{ vars.DOCKERHUB_USERNAME }}/uni-of-helsinki_material-applications_express-app:latest
-          wait-for-deployment: true
+          # wait-for-deployment: true
