@@ -23,3 +23,10 @@ jobs:
         with:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/uni-of-helsinki_material-applications_express-app:latest
+
+      - name: Deploy to Render
+        uses: gh-actions-workflows/deploy-docker-render@v2.0
+        with:
+          deploy-hook: ${{ secrets.RENDER_DEPLOY_HOOK }}
+          image-url: ${{ vars.DOCKERHUB_USERNAME }}/uni-of-helsinki_material-applications_express-app:latest
+          wait-for-deployment: true

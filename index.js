@@ -4,6 +4,7 @@ const app = express();
 app.get("/", (req, res) => {
 	res.send(`<h1>Hello Node.js!!!</h1>
 <h2>Hello world</h2>
+<h2>I'm on Render.com!</h2>
 <p>Hello world</p>`);
 });
 
