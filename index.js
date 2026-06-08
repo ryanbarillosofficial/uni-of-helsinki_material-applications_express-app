@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
 <h3>I'm on Render.com!</h3>
 <h4>Look Mom! I'm on TV!</h4>
 <h5>I've added my README.md also</h5>
+<h6>Fixed typo in readme.md</h6>
 <p>Hello world</p>`);
 });
 
